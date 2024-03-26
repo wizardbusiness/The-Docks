@@ -16,8 +16,41 @@
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1>I Like Cats (and Naps) a lot</h1>
-    <img class="avatar" src="/cat-stat.jpg" height="400" width="300">
-    <script src="" async defer></script>
+    <header><h1>CatBook</h1></header>
+    <div class="avatar">
+      <img src="/cat-stat.jpg" height="300" width="">
+    </div>
+    <div id="profile">
+      Name: <h3 id="name">Freddy Whiskers</h3>
+      <hr />
+      Occupation: <h3 id="occ">Master Meower</h3>
+      <hr />
+      Color: <h3 id="fcolor">Gray with black stripes</h3>
+      <hr />
+      Age: <h3 id="age">8 Years Old</h3>
+      <hr />
+      email: <h3 id="email">freddywhiskers@catmail.meow</h3>
+      <hr />
+      <button id="edit-btn">Edit profile</button>
+    </div>
+    <form id="edit-profile">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="Freddy Whiskers"> 
+      <hr />
+      <label for="occ">Occupation:</label>
+      <input type="text" id="occ" name="occupation" value="Master Meower">
+      <hr />
+      <label for="fcolor">Fur Color:</label>
+      <input type="text" id="fcolor" name="fcolor" value="Gray with black stripes">
+      <hr />
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" value="8 Years Old">
+      <hr />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" value="freddywhiskers@catmail.meow">
+      <hr />
+      <button type="submit">Save Changes</button>
+    </form>
+    <script  src="index.js" type="application/javascript" async defer></script>
   </body>
 </html>

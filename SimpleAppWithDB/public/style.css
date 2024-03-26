@@ -1,6 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  gap: 5vh;
+  background-color: antiquewhite;
+}
+
 h1 {
   font-size: 2rem;
 }
+
+hr {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
 .avatar {
-  border: 1px solid red;
+  height: 200px;
+  width: 200px;
+  border: 5px solid #c8c8c8;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+#profile {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+
+#edit-profile {
+  display: none;
+}
+
+#edit-profile * {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+input {
+  all: unset;
+  background-color: beige; 
+  font-size: 1.5rem;
+  height: 5vh;
+  padding-left: 1em;
+
+}
+
+button {
+  all: unset;
+  font-size: 1rem;
+  height: 2rem;
+  padding: 0.3em;
+  border: 2px solid bisque; 
+  background-color: beige;
+}
+
+button:hover {
+  /* background-color: rgb(253, 253, 244); */
+  border: 2px solid rgb(253, 253, 244); 
+}
+
+button:active {
+  box-shadow: 2px 2px 5px inset rgb(224, 224, 202);
 }
